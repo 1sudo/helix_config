@@ -1,0 +1,22 @@
+theme = "x_theme"
+
+[editor]
+line-number = "relative"
+cursorline = true
+bufferline = "always"
+text-width = 80
+popup-border = "all"
+
+[editor.statusline]
+left = ["file-name", "read-only-indicator", "file-modification-indicator", "diagnostics", "workspace-diagnostics"]
+center = ["mode", "spinner"]
+right = ["selections", "position", "position-percentage", "file-encoding", "file-line-ending", "file-type"]
+separator = "|"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[editor.lsp]
+enable = true
+display-messages = true
+display-inlay-hints = true
